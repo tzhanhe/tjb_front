@@ -1,5 +1,9 @@
 # tjb_front
 
+## 前提
+
+电脑上需要安装 [ yarn ](https://yarnpkg.com/zh-Hans/docs/install#windows-stable), node , [ vue-cli](https://cli.vuejs.org/guide/installation.html)
+
 ## Project setup
 ```
 yarn install
