@@ -1,17 +1,13 @@
 <template>
   <div id="app">
-    <Layout>
       <Menu />
-      <Content>
-        <ProductShowBoard />
-      </Content>
-    </Layout>
+      <ProductShowBoard />
   </div>
 </template>
 
 <script>
 import Menu from "./components/Menu.vue";
-import ProductShowBoard from "./components/ProductShowBoard.vue"
+import ProductShowBoard from "./components/ProductShowBoard.vue";
 
 export default {
   name: "app",

@@ -1,5 +1,5 @@
 <template>
-  <Menu mode="horizontal" :theme="theme1" active-name="1">
+  <Menu mode="horizontal" active-name="1">
         <MenuItem name="1">
             <Icon type="ios-cart" size="24" />
             淘金市场
