@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div> &nbsp;</div>
     <Waterfall :line-gap="200" :watch="productList" align="center">
       <waterfallSlot
         v-for="product in productList"
@@ -7,7 +8,7 @@
         :height="600"
         :key="product.prono"
       >
-      <ProductCard product="product"></ProductCard>
+      <ProductCard :product="product"></ProductCard>
       </waterfallSlot>
     </Waterfall>
   </div>
@@ -27,12 +28,21 @@ export default {
           prono: 1,
           proname: "理财产品 1",
           prodesc: "4.9",
-          prorate: "",
-          saleamt: "",
-          invaliddate: "",
-          expiredate: "",
-          fsflwno: ""
-
+          prorate: "3.00%",
+          saleamt: "30000",
+          invaliddate: "10/23",
+          expiredate: "10/1",
+          fsflwno: "123"
+        },
+        {
+          prono: 1,
+          proname: "理财产品 1",
+          prodesc: "4.9",
+          prorate: "3.00%",
+          saleamt: "30000",
+          invaliddate: "10/23",
+          expiredate: "10/1",
+          fsflwno: "123"
         }
       ]
     };
