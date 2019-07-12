@@ -1,33 +1,35 @@
 <template>
   <div>
-    <Menu mode="horizontal" active-name="1">
+    <el-menu mode="horizontal" default-active="1" >
       <Row>
-        <i-col span="8">
-          <MenuItem name="1">
-            <Icon type="ios-cart" size="24" />淘金市场
-          </MenuItem>
-        </i-col>
-        <i-col span="8">
-          <Input suffix="ios-search" placeholder="Enter text" style="width: auto" />
-        </i-col>
-        <i-col span="8">
-          <Submenu name="2">
+        <el-col span="8">
+          <el-menu-item name="1">
+            <img src="../assets/czbanklogo.jpg" width="180px" style="margin-top: 0px" />
+          </el-menu-item>
+        </el-col>
+        <el-col span="8" >
+          <el-input hidden-sm-and-down prefix-icon="el-icon-search" placeholder="搜索" style="margin-top: 16px" />
+        </el-col>
+        <el-col span="8" style="align: left;">
+          <el-submenu name="2">
             <template slot="title">
-              <Icon type="ios-home" size="24" />个人中心
+              <Icon type="el-icon-home" size="24" />个人中心
             </template>
-            <MenuGroup title="我">
-              <MenuItem name="2-1">我的资料</MenuItem>
-              <MenuItem name="2-2">查看我的理财</MenuItem>
-            </MenuGroup>
-            <MenuGroup title="消息">
-              <MenuItem name="2-1">系统消息</MenuItem>
-              <MenuItem name="2-2">交易消息</MenuItem>
-              <MenuItem name="2-3">用户消息</MenuItem>
-            </MenuGroup>
-          </Submenu>
-        </i-col>
+            <el-menu-item-group>
+              <template slot="title">我</template>
+              <el-menu-item index="2-1">我的资料</el-menu-item>
+              <el-menu-item index="2-2">查看我的理财</el-menu-item>
+            </el-menu-item-group>
+            <el-menu-item-group>
+            <template slot="title">消息</template>
+              <el-menu-item index="2-1">系统消息</el-menu-item>
+              <el-menu-item index="2-2">交易消息</el-menu-item>
+              <el-menu-item index="2-3">用户消息</el-menu-item>
+            </el-menu-item-group>
+          </el-submenu>
+        </el-col>
       </Row>
-    </Menu>
+    </el-menu>
   </div>
 </template>
 

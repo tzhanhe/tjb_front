@@ -1,7 +1,6 @@
 <template>
-  <Card style="width:550; height:600;">
+  <el-card style="width:550; height:600;">
     <p slot="title">
-      <Icon type="md-cash" size="24" color="#ff9900"></Icon>
       {{product.proname}}
     </p>
     <div class="product-card">
@@ -14,7 +13,7 @@
       <br />
       <p>失效日期: {{product.invaliddate}}</p>
     </div>
-  </Card>
+  </el-card>
 </template>
 
 <script>
