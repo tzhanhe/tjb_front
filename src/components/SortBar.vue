@@ -1,6 +1,6 @@
 <template>
   <el-form ref="form" :model="from" label-width="200px" style="margin-left: -120px">
-    <el-form-item label="剩余期限">
+    <el-form-item label="排序方式">
       <el-radio-group v-model="form.sortBy">
         <el-radio label="剩余期限"></el-radio>
         <el-radio label="转让价格"></el-radio>
