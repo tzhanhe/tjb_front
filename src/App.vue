@@ -1,22 +1,17 @@
 <template>
   <div id="app">
       <Menu />
-      <HeadBar />
-      <ProductShowBoard />
+      <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Menu from "./components/Menu.vue";
-import ProductShowBoard from "./components/ProductShowBoard.vue";
-import HeadBar from "./components/HeadBar.vue"
 
 export default {
   name: "app",
   components: {
     Menu,
-    ProductShowBoard,
-    HeadBar
   }
 };
 </script>
