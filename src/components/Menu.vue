@@ -12,9 +12,9 @@
         <el-col span="8">
           <el-input
             hidden-sm-and-down
-            prefix-icon="el-icon-search"
+            suffix-icon="el-icon-search"
             placeholder="搜索"
-            style="margin-top: 16px"
+            style="margin-top: 9px;"
           />
         </el-col>
         <el-col span="8" style="align: left;">
